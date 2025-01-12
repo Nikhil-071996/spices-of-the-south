@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/spices-of-the-south/static/css/main.e90368c8.css",
-    "main.js": "/spices-of-the-south/static/js/main.016814bf.js",
+    "main.js": "/spices-of-the-south/static/js/main.2d32c081.js",
     "static/js/453.ebb1c87a.chunk.js": "/spices-of-the-south/static/js/453.ebb1c87a.chunk.js",
     "static/media/banner.gif": "/spices-of-the-south/static/media/banner.d0e291222227840b77e5.gif",
     "static/media/Dish-1.png": "/spices-of-the-south/static/media/Dish-1.02daf516a7fd96781928.png",
@@ -64,11 +64,11 @@
     "static/media/email.svg": "/spices-of-the-south/static/media/email.ae3d4342212da7530d7326ac7f4a2149.svg",
     "static/media/select-dropdown.svg": "/spices-of-the-south/static/media/select-dropdown.a13b01ef1c3146533254.svg",
     "main.e90368c8.css.map": "/spices-of-the-south/static/css/main.e90368c8.css.map",
-    "main.016814bf.js.map": "/spices-of-the-south/static/js/main.016814bf.js.map",
+    "main.2d32c081.js.map": "/spices-of-the-south/static/js/main.2d32c081.js.map",
     "453.ebb1c87a.chunk.js.map": "/spices-of-the-south/static/js/453.ebb1c87a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e90368c8.css",
-    "static/js/main.016814bf.js"
+    "static/js/main.2d32c081.js"
   ]
 }
