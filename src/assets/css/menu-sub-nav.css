@@ -1,0 +1,27 @@
+.menu-sub-nav{
+    background: #F7750014;
+    backdrop-filter: blur(52.79999923706055px);
+    position: sticky;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000000;
+    padding: 10px 0;
+    transition: all 0.3s ease;
+}
+
+.menu-sub-nav .type-of-foods{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.menu-sub-nav .type-of-foods .types{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.menu-sub-nav .type-of-foods .types img{
+    width: 33px;
+}

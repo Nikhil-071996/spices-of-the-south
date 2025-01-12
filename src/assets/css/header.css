@@ -1,0 +1,59 @@
+header{
+    background-color: transparent;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3%;
+    transition: all 0.3s ease;
+    z-index: 100;
+}
+
+header.scrolled{
+    background-color: #FFFEEF;
+    box-shadow: 0 2px 10px #0000003a !important;
+}
+
+
+    
+header .logo{
+    width: 131px;
+}
+
+header .logo img{
+    width: 100%;
+}
+
+header nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    gap: 30px;
+}
+
+header nav ul li a{
+    padding: 10px;
+    text-decoration: none;
+    color: #000;
+}
+
+header.home nav ul li a{
+    color: #fff;
+}
+
+header.scrolled nav ul li a{
+    color: #000;
+}
+
+
+
+header nav ul li a.active{
+    color: var(--primary-color);
+}
+
+header.scrolled nav ul li a.active{
+    color: var(--primary-color);
+}

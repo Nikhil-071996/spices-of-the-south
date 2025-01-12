@@ -1,0 +1,50 @@
+.form-container{
+    margin-top: 24px;
+}
+
+.form-container .first-section{
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-container form{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.form-container .first-section .input-container{
+    width: 48%;
+}
+
+
+.form-container input, .form-container select{
+    width: 100%;
+    padding: 17px 19px;
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    background: transparent;
+    font-size: 19px;
+    outline: none;
+}
+
+.form-container input::placeholder, .form-container select{
+    color: #B5B5B5;
+}
+
+.form-container select{
+    background: url('../images/contact/select-dropdown.svg');
+    background-position: 95% center;
+    background-repeat: no-repeat;
+    background-size: 5%;
+    appearance: none;
+}
+
+.form-container select option{
+    white-space: pre-wrap;
+}
+
+
+.form-container button{
+    margin-top: 12px;
+}

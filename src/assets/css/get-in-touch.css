@@ -1,0 +1,57 @@
+.get-in-touch{
+    padding-top: 181px;
+    position: relative;
+}
+
+.get-in-touch h2{
+    margin-bottom: 12px;
+}
+
+.contact-info {
+    margin-top: 36px;
+    display: flex;
+    gap: 36px;
+    flex-direction: column;
+}
+
+.contact-info .info{
+    display: flex;
+    align-items: center;
+    gap: 3%;
+    width: 70%;
+}
+
+.contact-info .info .img-container{
+    width: 24px;
+}
+
+.contact-info .info .img-container img{
+    height: 100%;
+}
+
+.get-in-touch .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.get-in-touch .section-left{
+    width: 45%;
+}
+
+.get-in-touch .section-right{
+    width: 45%;
+}
+
+.social-media{
+    margin-top: 54px;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.get-in-touch .leaf-icon{
+    position: absolute;
+    right: 0;
+    top: 0;
+}

@@ -1,0 +1,105 @@
+.menu-items{
+    padding-top: 94px;
+    position: relative;
+}
+
+
+.menu-items .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-items .left-section{
+    width: 35%;
+    position: relative;
+}
+
+.menu-items .left-section .img-container{
+    width: 100%;
+}
+
+.menu-items .left-section .img-container img{
+    width: 100%;
+}
+
+.menu-items .right-section{
+    width: 60%;
+}
+
+.menu-items .right-section h2{
+    color: var(--primary-color);
+    border-top: 10px solid var(--primary-color);
+    padding-top: 22px;
+    width: fit-content;
+    /* text-decoration-thickness: 10px; */
+}
+
+.food-items{
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
+}
+
+.food-items .items{
+    display: flex;
+    justify-content: space-between;
+}
+
+.food-items .items .name-section{
+    flex: 1;
+
+}
+
+.food-items .items .item-name{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.food-items .items .item-name .image-container{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.food-items .items .item-name .image-container img{
+    width: 23px;
+    aspect-ratio: 1;
+}
+
+.food-items .items p{
+    width: 50%;
+}
+
+.menu-items .leaf-icon{
+    position: absolute;
+    top: -18%;
+    right: 0;
+}
+
+.menu-items .mahabali{
+    position: absolute;
+    top: 10%;
+    left: 5%;
+}
+
+.menu-items .Vilakka{
+    position: absolute;
+    bottom: 25%;
+    right: -10%;
+}
+
+.menu-items .Damroo{
+    position: absolute;
+    bottom: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.menu-items .starFlower{
+    position: absolute;
+    right: 0%;
+    top: 0;
+}

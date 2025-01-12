@@ -1,0 +1,133 @@
+.about-us{
+    padding-top: 50px;
+}
+
+.about-us-section .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-us-section .left-section{
+    display: flex;
+    flex-direction: column;
+}
+
+.about-us-section .right-section .img-container{
+    width: 100%;
+}
+
+.about-us-section .right-section .img-container img{
+    width: 100%;
+}
+
+.about-us-section .left-section h1{
+    color: var(--primary-color);
+    margin-bottom: 25px;
+}
+
+.about-us-section .left-section p{
+    line-height: 38px;
+    margin-bottom: 38px;
+}
+
+.about-us-section .left-section .btn-container{
+    display: flex;
+    gap: 16px;
+}
+
+.about-us-section .left-section, .about-us-section .right-section{
+    width: 48%;
+}
+
+/* Dish Section Starts */
+
+.dish-section{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.dish-section .boat{
+    position: absolute;
+    right: 0;
+}
+
+.dish-section .plant{
+    position: absolute;
+    right: -10%;
+    top: -40%;
+}
+
+.dish-section .flower{
+    position: absolute;
+    right: 0%;
+    bottom: 20%;
+}
+
+ .dish-section .right-section{
+    width: 60%;
+    position: relative;
+}
+
+.dish-section .left-section{
+    width: 40%;
+    position: relative;
+
+}
+
+.dish-section .left-section .img-container{
+    width: 100%;
+}
+
+.dish-section .left-section .img-container img{
+    width: 100%;
+}
+
+.dish-section p{
+    width: 70%;
+    line-height: 38px;
+    margin-top: 20%;
+    margin-left: 10%;
+    position: relative;
+
+}
+
+
+/* DishSection Ends */
+
+/* DishSection Two Starts */
+
+.dish-section-two{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dish-section-two .left-section{
+    width: 55%;
+    position: relative;
+}
+
+.dish-section-two .right-section{
+    width: 45%;
+    position: relative;
+}
+
+.dish-section-two .right-section .pot{
+    position: absolute;
+}
+
+.dish-section-two .right-section .img-container{
+    width: 100%;
+}
+
+.dish-section-two .right-section .img-container img{
+    width: 100%;
+}
+
+.dish-section-two p{
+    width: 70%;
+    margin-left: 10%;
+}
+
+/* DishSection Two Ends */

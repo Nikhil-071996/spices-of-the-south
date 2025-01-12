@@ -1,0 +1,23 @@
+.order .container{
+    padding-top: 50px;
+}
+.order .container h2.order-heading{
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.order .container p{
+    line-height: 38px;
+    width: 90%;
+}
+
+.menu-and-order-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-and-order-container .left-section,
+.menu-and-order-container .right-section{
+    width: 48%;
+}
+
