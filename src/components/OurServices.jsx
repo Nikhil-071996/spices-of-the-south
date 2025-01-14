@@ -43,7 +43,7 @@ function OurServices() {
 
                     
                     <Link className="card" to={'/order-now'}>
-                        <div className="img-container">
+                        <div className="img-container main-image">
                             <img src={order} alt="" className='main-img' />
                         </div>
                         <h5 className='fs-24 fw-600'>Order</h5>
@@ -53,7 +53,7 @@ function OurServices() {
                     </Link>
 
                     <Link className="card" to={'/catering'}>
-                        <div className="img-container">
+                        <div className="img-container main-image">
                             <img src={catering} alt="" className='main-img' />
                         </div>
                         <h5 className='fs-24 fw-600'>Catering</h5>
@@ -63,10 +63,10 @@ function OurServices() {
                     </Link>
 
                     <Link className="card" to={'/catering'}>
-                        <div className="img-container">
+                        <div className="img-container main-image">
                             <img src={readyToGo} alt="" className='main-img' />
                         </div>
-                        <h5 className='fs-24 fw-600'>Ready to go Meals</h5>
+                        <h5 className='fs-24 fw-600'>Ready to go <br /> Meals</h5>
                         <div className="img-container">
                             <img src={Arrow} alt="" />
                         </div>

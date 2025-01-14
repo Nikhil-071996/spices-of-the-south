@@ -103,3 +103,20 @@
     right: 0%;
     top: 0;
 }
+
+.container.Biryani{
+    align-items: center;
+    margin-top: -50px;
+}
+
+.container.Chefs.Specials{
+    align-items: center;
+}
+
+img.Biryani{
+    width: 90% !important;
+}
+
+img.Chefs.Specials{
+    width: 90% !important;
+}

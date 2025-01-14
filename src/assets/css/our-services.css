@@ -22,6 +22,7 @@
     margin-top: 10px;
 }
 
+
 .our-services .left-section .image-container img{
     width: 100%;
 }
@@ -52,7 +53,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10%;
+    gap: 8%;
     transition: all 0.5s ease;
     text-decoration: none;
     color: #000;
@@ -63,17 +64,30 @@
 .our-services .right-section .cards-container .card h5{
     text-align: center;
     text-decoration: none;
-    height: 10%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .our-services .right-section .cards-container .card .img-container{
     width: 75%;
+    height: 10%;
     text-align: center;
 }
 
-.our-services .right-section .cards-container .card .img-container img.main-img{
-    width: 85%;
+.our-services .right-section .cards-container .card .img-container.main-image{
+    height: 40%;
+    width: 75%;
+    text-align: center;
 }
+
+.our-services .right-section .cards-container .card .img-container.main-image img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
 
 .our-services .right-section .cards-container .card .img-container img{
     width: 30%;

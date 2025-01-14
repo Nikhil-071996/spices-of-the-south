@@ -2,7 +2,7 @@ import React from 'react'
 import OrderItems from './OrderItems'
 import '../assets/css/order-menu.css'
 
-function OrderMenu({menuData}) {
+function OrderMenu({menuData, addToCart}) {
   return (
     <div className='order-menu'>
 
@@ -10,13 +10,13 @@ function OrderMenu({menuData}) {
 
         <div className="order-menu-container">
 
-            <OrderItems  dishes={menuData.starterMenu} />
-            <OrderItems  dishes={menuData.pieOrRolls} />
-            <OrderItems  dishes={menuData.chefsSpecial} />
-            <OrderItems  dishes={menuData.curriesDish} />
-            <OrderItems  dishes={menuData.biryaniDishes} />
-            <OrderItems  dishes={menuData.sweetDishes} />
-            <OrderItems  dishes={menuData.sidesDishes} />
+            <OrderItems id={1} addToCart={addToCart} categories={menuData.categories}  dishes={menuData.dishes} />
+            <OrderItems id={2} addToCart={addToCart} categories={menuData.categories}  dishes={menuData.dishes} />
+            <OrderItems id={7} addToCart={addToCart} categories={menuData.categories}  dishes={menuData.dishes} />
+            <OrderItems id={3} addToCart={addToCart} categories={menuData.categories}  dishes={menuData.dishes} />
+            <OrderItems id={4} addToCart={addToCart} categories={menuData.categories}  dishes={menuData.dishes} />
+            <OrderItems id={5} addToCart={addToCart} categories={menuData.categories}  dishes={menuData.dishes} />
+            <OrderItems id={6} addToCart={addToCart} categories={menuData.categories}  dishes={menuData.dishes} />
 
         </div>
 

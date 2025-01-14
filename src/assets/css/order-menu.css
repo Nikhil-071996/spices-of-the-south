@@ -35,6 +35,15 @@
 
 }
 
+.order-menu .items{
+    cursor: pointer;
+    padding: 1px;
+}
+
+.order-menu .items:hover{
+    background-color: #f7730070;
+}
+
 /* Scroll bar Starts */
 
 .order-menu-container::-webkit-scrollbar-track

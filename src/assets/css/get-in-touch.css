@@ -50,8 +50,33 @@
     align-items: center;
 }
 
+.social-media img{
+    cursor: pointer;
+}
+
 .get-in-touch .leaf-icon{
     position: absolute;
     right: 0;
     top: 0;
+}
+
+
+@media (max-width : 990px) {
+    .get-in-touch .container{
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .get-in-touch .section-left{
+        width: 100%;
+    }
+
+    .get-in-touch .section-right{
+        width: 100%;
+        
+    }
+
+    .social-media{
+        width: 100%;
+    }
 }

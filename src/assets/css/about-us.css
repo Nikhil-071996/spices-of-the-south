@@ -35,6 +35,17 @@
     gap: 16px;
 }
 
+.about-us-section .left-section .btn-container a{
+    text-decoration: none;
+}
+
+.about-us-section .left-section .btn-container .view-menu-btn{
+    color: #000;
+}
+.about-us-section .left-section .btn-container .view-menu-btn:hover{
+    color: #fff;
+}
+
 .about-us-section .left-section, .about-us-section .right-section{
     width: 48%;
 }
@@ -131,3 +142,15 @@
 }
 
 /* DishSection Two Ends */
+
+
+@media (max-width : 990px) {
+    .about-us-section .container{
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+
+    .about-us-section .left-section, .about-us-section .right-section{
+        width: 100%;
+    }
+}

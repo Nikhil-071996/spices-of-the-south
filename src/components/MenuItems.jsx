@@ -12,7 +12,7 @@ import starFlower from '../assets/images/home/star-flower.svg'
 
 import '../assets/css/menu-items.css'
 
-function MenuItems({dishes, image, revert, targetSectionRef}) {
+function MenuItems({dishes, image, revert, targetSectionRef, id, categories}) {
 
     const iconMapping = {
         "dairy free": dairy,
@@ -22,50 +22,53 @@ function MenuItems({dishes, image, revert, targetSectionRef}) {
         "gluten free": glutenFree,
     };
 
+
   return (
     <section className='menu-items' ref={targetSectionRef} >
 
         {
-            dishes.name === "Starters" ? <img src={leafIcon} alt="" className='leaf-icon' /> : null
+            categories.filter(el => el.id === id)[0].name === "Starters" ? <img src={leafIcon} alt="" className='leaf-icon' /> : null
         }
 
         {
-            dishes.name === "Starters" ? <img src={mahaBali} alt="" className='mahabali' /> : null
+            categories.filter(el => el.id === id)[0].name === "Starters" ? <img src={mahaBali} alt="" className='mahabali' /> : null
         }
 
         {
-            dishes.name === "Sweets" ? <img src={starFlower} alt="" className='starFlower' /> : null
+            categories.filter(el => el.id === id)[0].name === "Sweets" ? <img src={starFlower} alt="" className='starFlower' /> : null
         }
         
         
-        <div className="container" style={{flexDirection : revert ? "row-reverse" : "row"}}>
+        <div className={`container ${categories.filter(el => el.id === id)[0].name}`} style={{flexDirection : revert ? "row-reverse" : "row"}}>
 
             <div className="left-section">
                 <div className="img-container" 
                     style={{
-                        marginTop : dishes.name === "Starters" ? "15%" : ''
+                        marginTop : categories.filter(el => el.id === id)[0].name === "Starters" ? "15%" : ''
                     }}
                 >
-                    <img src={image} alt="" />
+                    <img src={image} alt={image} className={categories.filter(el => el.id === id)[0].name} />
                 </div>
 
                 {
-                    dishes.name === "Pies/Rolls" ? <img src={Vilakka} alt="" className='Vilakka' /> : null
+                    categories.filter(el => el.id === id)[0].name === "Pies/Rolls" ? <img src={Vilakka} alt="" className='Vilakka' /> : null
                 }
 
                 {
-                    dishes.name === "Curries" ? <img src={Damroo} alt="" className='Damroo' /> : null
+                    categories.filter(el => el.id === id)[0].name === "Curries" ? <img src={Damroo} alt="" className='Damroo' /> : null
                 }
                 
             </div>
             <div className="right-section">
 
-                <h2 className='fs-48 fw-600'>{dishes.name}</h2>
+                <h2 className='fs-48 fw-600'>{categories.filter(el => el.id === id)[0].name}</h2>
 
                 <div className="food-items">
 
                     {
-                        dishes.dishesList.map(el => (
+                        dishes.map(el => (
+                            el.category === id
+                            ?
                             <div className="items" key={el.id}>
 
                             <div className='name-section'>
@@ -92,6 +95,7 @@ function MenuItems({dishes, image, revert, targetSectionRef}) {
                             </div>
 
                             </div>
+                            : null
                         ))
                     }
 
