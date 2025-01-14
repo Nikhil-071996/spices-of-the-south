@@ -38,22 +38,18 @@ function App() {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
 
-      // If scrolling down, hide menu; if scrolling up, show menu
       if (currentScrollY > lastScrollY && currentScrollY > 50) {
         setIsMenuVisible(false);
       } else {
         setIsMenuVisible(true);
       }
 
-      // Update last scroll position
       setLastScrollY(currentScrollY);
     };
 
-    // Add scroll event listener
     window.addEventListener('scroll', handleScroll);
 
     return () => {
-      // Cleanup event listener on component unmount
       window.removeEventListener('scroll', handleScroll);
     };
   }, [lastScrollY]);
