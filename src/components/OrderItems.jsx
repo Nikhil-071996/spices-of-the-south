@@ -1,16 +1,24 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
-function OrderItems({dishes}) {
+function OrderItems({dishes, id, categories, addToCart}) {
+
+  
+
+  
+
   return (
     <div className="order-items">
 
-        <h2 className='fs-24 fw-600'>{dishes.name}</h2>
+        <h2 className='fs-24 fw-600'>{categories.filter(el => el.id === id)[0].name}</h2>
 
         <div className="food-items">
 
             {
-                dishes.dishesList.map(el => (
-                    <div className="items" key={el.id}>
+              
+                dishes.map(el => (
+                  el.category === id
+              ?
+                    <div className="items" key={el.id} onClick={() => addToCart(el)} >
 
                     <div className='name-section'>
                         <div className="item-name">
@@ -22,7 +30,10 @@ function OrderItems({dishes}) {
                     </div>
 
                     </div>
+                    :
+                    null
                 ))
+                
             }
 
             

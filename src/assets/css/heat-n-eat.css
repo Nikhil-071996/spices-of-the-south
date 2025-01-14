@@ -157,3 +157,55 @@
 }
 
 /* Quick Meals Ends */
+
+
+@media (max-width : 990px) {
+    .flavours .container{
+        flex-direction: column-reverse;
+    }
+
+    .flavours .container .right-section{
+        width: 100%;
+    }
+
+    .flavours .container .right-section .img-container{
+        text-align: center;
+    }
+
+    .flavours .container .right-section .img-container img{
+        width: 60%;
+    }
+
+    .flavours .container .left-section h1{
+        width: 100%;
+    }
+    
+    .flavours .container .left-section{
+        width: 100%;
+    }
+
+    .event-container{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .events-type h4{
+        margin-top: 17px;
+    }
+
+    .events-type p{
+        width: 100%;
+    }
+
+    .quick-meals .container{
+        flex-direction: column;
+    }
+
+    .quick-meals .container .right-container{
+        width: 100%;
+    }
+
+    .quick-meals .container .right-container img{
+        width: 100%;
+    }
+}

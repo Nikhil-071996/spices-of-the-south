@@ -37,10 +37,15 @@
     gap: 30px;
 }
 
+.menu-msg{
+    color : var(--primary-color)
+}
+
 .order-container .orders{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 15px;
 }
 
 .order-container .orders .dish-name{

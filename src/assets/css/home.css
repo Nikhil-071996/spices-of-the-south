@@ -1,5 +1,5 @@
 main.hero{
-    background-image: url(../images/home/banner.gif);
+    background-image: linear-gradient(to bottom, #00000066, #00000066), url(../images/home/banner.gif);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -37,6 +37,9 @@ main.hero .btn-container a{
     text-decoration: none;
 }
 
+.order-now-btn:hover{
+    color: #fff;
+}
 
 /*  Gallery Section Starts */
 
@@ -97,6 +100,56 @@ main.hero .btn-container a{
 
 .spices-section .left-section{
     width: 50%;
+}
+
+.spices-section .left-section .images-container{
+    display: flex;
+    align-items: flex-end;
+}
+
+.spices-section .left-section .images-container .spices-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.spices-container .spice{
+    margin-bottom: 10px;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+ .spices-container .spice-spoon{
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+}
+
+ .spices-container p{
+    margin-bottom: 10px;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.spices-container{
+    transition: all 0.3s ease;
+}
+
+.spices-container:hover {
+    transform: translateY(-10%);
+}
+
+.spices-container:hover .spice{
+    opacity: 1;
+}
+
+
+
+
+
+
+.spices-container:hover p{
+    opacity: 1;
 }
 
 .spices-section .left-section h2{

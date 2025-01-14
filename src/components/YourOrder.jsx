@@ -1,7 +1,24 @@
 import React from 'react'
 import '../assets/css/your-order.css'
 
-function YourOrder() {
+function YourOrder({cart, addToCart, setCart}) {
+
+    const decreaseCount = (dish) => {
+        const updatedCart = cart
+          .map((item) => {
+            if (item.id === dish.id) {
+              return { ...item, count: item.count - 1 }; // Decrease count
+            }
+            return item;
+          })
+          .filter((item) => item.count > 0); // Remove item if count is 0
+      
+        setCart(updatedCart);
+        localStorage.setItem('cart', JSON.stringify(updatedCart));
+      };
+
+
+
   return (
     <div className='your-order'>
         <div className="padding-section">
@@ -11,95 +28,27 @@ function YourOrder() {
         <div className="order-container" >
             <div className="order-container-inner" >
 
-                <div className='orders'>
-                    <h4 className='fs-20 fw-600 poppins dish-name'>Teriyaki tofu rice paper rolls</h4>
-                    <h4 className='fs-20 fw-600 poppins price'>$15.00</h4>
-                    <div className="no-of-orders">
-                        <button>-</button>
-                        <input type="text" className='fs-20 poppins' />
-                        <button>+</button>
-                    </div>
-                </div>
+                {
 
-                <div className='orders'>
-                    <h4 className='fs-20 fw-600 poppins dish-name'>Teriyaki tofu rice paper rolls</h4>
-                    <h4 className='fs-20 fw-600 poppins price'>$15.00</h4>
-                    <div className="no-of-orders">
-                        <button>-</button>
-                        <input type="text" className='fs-20 poppins' />
-                        <button>+</button>
-                    </div>
-                </div>
+                    cart.length === 0
+                    ?
+                    <h2 className='menu-msg'>Click on Menu item to Order</h2>
+                    :
 
-                <div className='orders'>
-                    <h4 className='fs-20 fw-600 poppins dish-name'>Teriyaki tofu rice paper rolls</h4>
-                    <h4 className='fs-20 fw-600 poppins price'>$15.00</h4>
-                    <div className="no-of-orders">
-                        <button>-</button>
-                        <input type="text" className='fs-20 poppins' />
-                        <button>+</button>
-                    </div>
-                </div>
+                    cart.map((dish) => (
+                        <div className='orders' key={dish.id}>
+                            <h4 className='fs-20 fw-600 poppins dish-name'>{dish.dishName}</h4>
+                            <h4 className='fs-20 fw-600 poppins price'>${dish.price.toFixed(2)}</h4>
+                            <div className="no-of-orders">
+                                <button onClick={() => decreaseCount(dish)}>-</button>
+                                <input type="text" className='fs-20 poppins' value={dish.count} />
+                                <button onClick={() => addToCart(dish)}>+</button>
+                            </div>
+                        </div>
+                    ))
+                }
 
-                <div className='orders'>
-                    <h4 className='fs-20 fw-600 poppins dish-name'>Teriyaki tofu rice paper rolls</h4>
-                    <h4 className='fs-20 fw-600 poppins price'>$15.00</h4>
-                    <div className="no-of-orders">
-                        <button>-</button>
-                        <input type="text" className='fs-20 poppins' />
-                        <button>+</button>
-                    </div>
-                </div>
-
-                <div className='orders'>
-                    <h4 className='fs-20 fw-600 poppins dish-name'>Teriyaki tofu rice paper rolls</h4>
-                    <h4 className='fs-20 fw-600 poppins price'>$15.00</h4>
-                    <div className="no-of-orders">
-                        <button>-</button>
-                        <input type="text" className='fs-20 poppins' />
-                        <button>+</button>
-                    </div>
-                </div>
-
-                <div className='orders'>
-                    <h4 className='fs-20 fw-600 poppins dish-name'>Teriyaki tofu rice paper rolls</h4>
-                    <h4 className='fs-20 fw-600 poppins price'>$15.00</h4>
-                    <div className="no-of-orders">
-                        <button>-</button>
-                        <input type="text" className='fs-20 poppins' />
-                        <button>+</button>
-                    </div>
-                </div>
-
-                <div className='orders'>
-                    <h4 className='fs-20 fw-600 poppins dish-name'>Teriyaki tofu rice paper rolls</h4>
-                    <h4 className='fs-20 fw-600 poppins price'>$15.00</h4>
-                    <div className="no-of-orders">
-                        <button>-</button>
-                        <input type="text" className='fs-20 poppins' />
-                        <button>+</button>
-                    </div>
-                </div>
-
-                <div className='orders'>
-                    <h4 className='fs-20 fw-600 poppins dish-name'>Teriyaki tofu rice paper rolls</h4>
-                    <h4 className='fs-20 fw-600 poppins price'>$15.00</h4>
-                    <div className="no-of-orders">
-                        <button>-</button>
-                        <input type="text" className='fs-20 poppins' />
-                        <button>+</button>
-                    </div>
-                </div>
-
-                <div className='orders'>
-                    <h4 className='fs-20 fw-600 poppins dish-name'>Teriyaki tofu rice paper rolls</h4>
-                    <h4 className='fs-20 fw-600 poppins price'>$15.00</h4>
-                    <div className="no-of-orders">
-                        <button>-</button>
-                        <input type="text" className='fs-20 poppins' />
-                        <button>+</button>
-                    </div>
-                </div>
+                
                 
 
             </div>
@@ -115,7 +64,8 @@ function YourOrder() {
             <div className="total-container">
                 <div className="total">
                     <p className='fs-24 fw-500 poppins'>Total</p>
-                    <p className='grand-total fs-24 fw-600  poppins'>$50.00</p>
+                    <p className='grand-total fs-24 fw-600  poppins'>${cart.reduce((acc, el) => acc + el.price * el.count, 0).toFixed(2)}
+                    </p>
                 </div>
 
                 <button className='enquiry-btn'> 

@@ -15,7 +15,8 @@ import GetInTouch from '../components/GetInTouch'
 import ScrollImageSection from '../components/ScrollImageSection'
 import MenuSubNav from '../components/MenuSubNav'
 
-import menuData from "../assets/menu/menu.json";
+// import menuData from "../assets/menu/menu.json";
+import menuData from "../assets/menu/menu2.json";
 
 
 
@@ -51,13 +52,13 @@ function Menu({menuHeight, isMenuVisible}) {
 
 
         
-        <MenuItems dishes={menuData.starterMenu} image={starters} targetSectionRef={targetSectionRef}  />
-        <MenuItems dishes={menuData.pieOrRolls}  image={pieRolls}  />
-        <MenuItems dishes={menuData.chefsSpecial}  image={chefSpecialImage}  />
-        <MenuItems dishes={menuData.curriesDish}  image={curries}  revert  />
-        <MenuItems dishes={menuData.biryaniDishes}  image={biryani} revert />
-        <MenuItems dishes={menuData.sweetDishes}  image={sweets}  />
-        <MenuItems dishes={menuData.sidesDishes}    />
+        <MenuItems id={1} categories={menuData.categories} dishes={menuData.dishes} image={starters} targetSectionRef={targetSectionRef}  />
+        <MenuItems id={2} categories={menuData.categories} dishes={menuData.dishes}  image={pieRolls}  />
+        <MenuItems id={7} categories={menuData.categories} dishes={menuData.dishes}  image={chefSpecialImage}  />
+        <MenuItems id={3} categories={menuData.categories} dishes={menuData.dishes}  image={curries}  revert  />
+        <MenuItems id={4} categories={menuData.categories} dishes={menuData.dishes}  image={biryani} revert />
+        <MenuItems id={5} categories={menuData.categories} dishes={menuData.dishes}  image={sweets}  />
+        <MenuItems id={6} categories={menuData.categories} dishes={menuData.dishes}    />
 
         <div className="divider">
             <img src={divider} alt="divider" />

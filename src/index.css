@@ -162,3 +162,9 @@ body{
 
 /* Font Weight Ends */
 
+
+@media (max-width: 990px) {
+  .scroll-image-section{
+    display: none;
+  }
+}
