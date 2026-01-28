@@ -1,0 +1,246 @@
+{
+    "categories": [
+      { "id": 1, "name": "Starters" },
+      { "id": 2, "name": "Pies/Rolls", "shortInfo" : "Pastry used is Gluten-Free & Vegan" },
+      { "id": 3, "name": "Curries - Single Portion" },
+      { "id": 4, "name": "Biriyani" },
+      { "id": 5, "name": "Sweets" },
+      { "id": 6, "name": "Sides" },
+      { "id": 7, "name": "Chefs Specials" }
+    ],
+    "dishes": [
+      {
+        "id": 1,
+        "category": 1,
+        "dishName": "Tandoori chicken rice paper rolls",
+        "shortDesc": "Blend of delicate rice paper, fresh herbs and juicy tandoori spiced chicken with a fiery, tangy sauce.",
+        "price": 4.99,
+        "type": ["gluten free", "dairy free", "nut free", "egg free"]
+      },
+      {
+        "id": 2,
+        "category": 1,
+        "dishName": "Teriyaki tofu rice paper rolls",
+        "shortDesc": "Tofu, teriyaki sauce, crisp salad and a fiery, tangy sauce.",
+        "price": 4.99,
+        "type": ["gluten free", "vegan", "nut free"]
+      },
+      {
+        "id": 3,
+        "category": 1,
+        "dishName": "Bhel / Chickpea salad",
+        "shortDesc": "Street-style chickpea salad. Medley of vibrant flavours and assorted textures.",
+        "price": 8.99,
+        "type": ["gluten free", "vegan", "nut free"]
+      },
+      {
+        "id": 4,
+        "category": 2,
+        "dishName": "Chicken curry roll",
+        "shortDesc": "Succulent chicken curry wrapped in flaky, gluten-free, vegan pastry",
+        "price": 11.49,
+        "type": ["gluten free", "dairy free", "nut free"]
+      },
+      {
+        "id": 5,
+        "category": 2,
+        "dishName": "Goat curry roll",
+        "shortDesc": "Slow braised goat curry in a flaky, gluten-free, vegan pastry",
+        "price": 17.99,
+        "type": ["gluten free", "dairy free", "nut free"]
+      },
+      {
+        "id": 6,
+        "category": 2,
+        "dishName": "Beef curry roll",
+        "shortDesc": "Slow braised beef curry in a flaky, gluten-free, vegan pastry",
+        "price": 16.99,
+        "type": ["gluten free", "dairy free", "nut free"]
+      },
+      {
+        "id": 7,
+        "category": 2,
+        "dishName": "Sausage roll",
+        "shortDesc": "Traditional sausage roll in a flaky, gluten-free, vegan pastry",
+        "price": 8.99,
+        "type": ["gluten free", "dairy free", "nut free"]
+      },
+      {
+        "id": 8,
+        "category": 3,
+        "dishName": "Parippu",
+        "shortDesc": "Comfort food at its best, lentils, Kerala style dal",
+        "price": 7.49,
+        "type": ["gluten free", "nut free", "vegan"]
+      },
+      {
+        "id": 9,
+        "category": 3,
+        "dishName": "Chickpea curry",
+        "shortDesc": "Chickpeas simmered in a blend of spices, coconut. Balance of heat and earthiness",
+        "price": 7.99,
+        "type": ["gluten free", "nut free", "vegan"]
+      },
+      {
+        "id": 10,
+        "category": 3,
+        "dishName": "Mixed vegetable curry",
+        "shortDesc": "Medley of mashed, spiced vegetables",
+        "price": 7.49,
+        "type": ["gluten free", "nut free", "vegan"]
+      },
+      {
+        "id": 11,
+        "category": 3,
+        "dishName": "Potato cauliflower curry",
+        "shortDesc": "Tender potatoes & cauliflower in a fragrant blend of spices",
+        "price": 7.49,
+        "type": ["gluten free", "nut free", "vegan"]
+      },
+      {
+        "id": 12,
+        "category": 3,
+        "dishName": "Chicken Chettinad",
+        "shortDesc": "Chicken simmered in a rich, spiced blend of roasted spices. Bold, aromatic",
+        "price": 13.49,
+        "type": ["gluten free", "dairy free"]
+      },
+      {
+        "id": 13,
+        "category": 3,
+        "dishName": "Thullu chicken",
+        "shortDesc": "Chicken infused with aromatic spices, cooked in coconut milk",
+        "price": 12.49,
+        "type": ["gluten free", "dairy free"]
+      },
+      {
+        "id": 14,
+        "category": 3,
+        "dishName": "Butter chicken",
+        "shortDesc": "There is no Indian restaurant without Butter Chicken",
+        "price": 12.49,
+        "type": ["gluten free"]
+      },
+      {
+        "id": 15,
+        "category": 3,
+        "dishName": "Pepper goat",
+        "shortDesc": "Slow cooked goat, in a pepper sauce. Perfect balance of heat and flavour",
+        "price": 16.49,
+        "type": ["gluten free", "dairy free"]
+      },
+      {
+        "id": 16,
+        "category": 3,
+        "dishName": "Malabar beef",
+        "shortDesc": "Beef slow cooked in a sauce with pandan, mint, and curry leaves",
+        "price": 13.99,
+        "type": ["gluten free", "dairy free"]
+      },
+      
+      {
+        "id": 17,
+        "category": 4,
+        "dishName": "Hyederabadi chicken biriyani",
+        "shortDesc": "The world’s best one pot dish",
+        "price": 16.99,
+        "type": ["gluten free"]
+      },
+      {
+        "id": 18,
+        "category": 4,
+        "dishName": "Malabari goat biriyani",
+        "shortDesc": "Fragrant rice, tender spiced goat, slow cooked",
+        "price": 19.99,
+        "type": ["gluten free", "dairy free"]
+      },
+      {
+        "id": 19,
+        "category": 5,
+        "dishName": "Mango lassi",
+        "shortDesc": "Creamy, tangy, and dairy-free. Coconut milk, ripe mangoes",
+        "price": 6.49,
+        "type": ["gluten free", "vegan"]
+      },
+      {
+        "id": 20,
+        "category": 5,
+        "dishName": "Carrot cake ( Flourless )",
+        "shortDesc": "Moist, gluten and dairy free carrot cake, topped with a carrot jam",
+        "price": 7.49,
+        "type": ["gluten free", "dairy free"]
+      },
+      {
+        "id": 21,
+        "category": 5,
+        "dishName": "Chocolate brownie (Flourless, sugarless)",
+        "shortDesc": "Decadent chocolate brownie with berries. Indulge without the guilt",
+        "price": 8.49,
+        "type": ["gluten free", "dairy free"]
+      },
+      {
+        "id": 22,
+        "category": 6,
+        "dishName": "Steamed rice",
+        "shortDesc": "",
+        "price": 2.49,
+        "type": ["gluten free", "vegan"]
+      },
+      {
+        "id": 23,
+        "category": 6,
+        "dishName": "Lemon rice",
+        "shortDesc": "Fragrant, infused with zesty lemon, spices and curry leaves",
+        "price": 2.99,
+        "type": ["gluten free"]
+      },
+      {
+        "id": 24,
+        "category": 6,
+        "dishName": "Rice cake",
+        "shortDesc": "Chewy rice cakes, simmered in a chilly sauce",
+        "price": 2.99,
+        "type": ["gluten free"]
+      },
+      {
+        "id": 25,
+        "category": 6,
+        "dishName": "Khichadi/Rice & lentil porridge",
+        "shortDesc": "Comforting, wholesome. Rice and lentil medley.",
+        "price": 2.99,
+        "type": ["gluten free", "egg free", "dairy free"]
+      },
+      {
+        "id": 26,
+        "category": 7,
+        "dishName": "Rogani Vegetables",
+        "shortDesc": "Seasonal vegetables in a rich tomato sauce enriched with fried onions.",
+        "price": 8.99,
+        "type": ["gluten free", "dairy free", "nut free"]
+      },
+      {
+        "id": 27,
+        "category": 7,
+        "dishName": "Chicken Xacuti",
+        "shortDesc": "From coastal Goa. Complex spiced, toasted coconut, tender boneless chicken",
+        "price": 13.99,
+        "type": ["gluten free", "dairy free", "nut free"]
+      },
+      {
+        "id": 28,
+        "category": 6,
+        "dishName": "Coconut Rice",
+        "shortDesc": "Rice cooked in coconut milk, pandan leaves.",
+        "price": 2.99,
+        "type": ["gluten free", "vegan"]
+      },
+      {
+        "id": 29,
+        "category": 5,
+        "dishName": "Bush Gold - Red Gum Honey",
+        "shortDesc": "Pure, local, rich in flavour.  This golden nectar from the Sawyer's Valley red gum blossom is a true taste of the forest.",
+        "price": 15.99,
+        "type": []
+      }
+    ]
+}

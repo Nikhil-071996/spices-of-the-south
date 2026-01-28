@@ -1,0 +1,123 @@
+.subscribe-container {
+    position: relative;
+    text-align: center;
+    overflow: hidden; /* Ensures no overflow from absolute elements */
+    margin-top: 130px;
+    margin-bottom: 90px;
+  }
+  
+  .subscribe-container img {
+    border-radius: 10px;
+  }
+  
+  .PlacedStyle {
+    position: absolute;
+    top: 15%; /* Adjust this value to control vertical positioning */
+    left: 50%;
+    transform: translate(-50%, 0); /* Centers horizontally */
+    width: 31%; /* Ensures responsiveness */
+  }
+  .text-2xl
+  {
+    font-size: 42px;
+    color:#fff;
+  }
+  .text-sm
+  {
+    font-size: 16px;
+    color:#fff;
+    font-weight:400;
+    margin-top: 14px;    
+    line-height: 24px;
+  }
+  .inputStyle{
+    font-size: 16px;
+    width: 58%;
+    background: rgba(0, 0, 0, 0);
+    border: 1px solid #FFFFFF;
+    border-radius: 10px;
+    outline: none;
+    padding: 13px 19px;
+
+}
+.moveInput
+{
+    margin-top: 18px;
+}
+
+.subButton
+{
+    font-size: 19.14px;
+    background-color: #A10702;
+    color: #FFF6ED;
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+    z-index: 10000;
+    border-radius: 10px;
+    border: none;
+    width: 26%;
+    height: 47px;
+    margin-top: 10px;
+    margin-left: -23px;
+    border-radius: 0px 10px 10px 0px
+}
+.inputStyle::placeholder {
+    color: white;
+    opacity: 1; /* Ensures full visibility */
+  }
+  
+  @media only screen and (max-width:990px){
+  .subscribe-container {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    margin-top: 71px;
+    margin-bottom: 63px;
+    width: 95%;
+    margin-left: 10px;
+    border-radius: 24px;
+}
+.PlacedStyle {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 91%;
+}
+.text-2xl {
+    font-size: 21px;
+    color: #fff;
+}
+.text-sm {
+    font-size: 12px;
+    color: #fff;
+    font-weight: 400;
+    margin-top: 30px;
+    line-height: 24px;
+}
+.subButton {
+    font-size: 15.14px;
+    background-color: #A10702;
+    color: #FFF6ED;
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+    z-index: 10000;
+    border-radius: 10px;
+    border: none;
+    width: 26%;
+    height: 39px;
+    margin-top: 10px;
+    margin-left: -23px;
+    border-radius: 0px 10px 10px 0px;
+}.inputStyle {
+    font-size: 15px;
+    width: 58%;
+    background: rgba(0, 0, 0, 0);
+    border: 1px solid #FFFFFF;
+    border-radius: 10px;
+    outline: none;
+    padding: 10px 19px;
+}
+  }

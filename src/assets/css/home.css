@@ -1,0 +1,252 @@
+main.hero{
+    background-image: linear-gradient(to bottom, #00000066, #00000066), url(../images/home/banner.gif);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+main.hero .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+main.hero h1{
+    color: #fff;
+    line-height: 75px;
+}
+
+main.hero p{
+    color: #FFEAD7;
+}
+
+main.hero .btn-container{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+main.hero .btn-container a{
+    text-decoration: none;
+}
+
+.order-now-btn:hover{
+    color: #fff;
+}
+
+/*  Gallery Section Starts */
+
+.gallery-section .container{
+    margin-top: 27px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+.gallery-section .section-left, .gallery-section .section-right{
+    width: 50%;
+}
+
+.gallery-section .image-container{
+    width: 100%;
+}
+
+.gallery-section .section-left .image-container{
+    width: 90%;
+}
+
+.gallery-section .image-container img{
+    width: 100%;
+}
+
+.gallery-section h2{
+    margin-top: 16px;
+    color: var(--primary-color);
+}
+
+.view-menu{
+    text-align: end;
+}
+
+.view-menu a{
+    text-underline-offset: 2px;
+    color: #000;
+    margin: 4%;
+}
+
+/*  Gallery Section Ends */
+
+
+/*  Spices Section Starts */
+
+.spices-section{
+    padding-top: 81px;
+    position: relative;
+}
+
+.spices-section .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.spices-section .left-section{
+    width: 50%;
+}
+
+.spices-section .left-section .images-container{
+    display: flex;
+    align-items: flex-end;
+}
+
+.spices-section .left-section .images-container .spices-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.spices-container .spice{
+    margin-bottom: 10px;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+ .spices-container .spice-spoon{
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+}
+
+ .spices-container p{
+    margin-bottom: 10px;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.spices-container{
+    transition: all 0.3s ease;
+}
+
+.spices-container:hover {
+    transform: translateY(-10%);
+}
+
+.spices-container:hover .spice{
+    opacity: 1;
+}
+
+
+
+
+
+
+.spices-container:hover p{
+    opacity: 1;
+}
+
+.spices-section .left-section h2{
+    text-align: center;
+    color: var(--primary-color);
+    margin-top: 30px;
+}
+
+.spices-section .right-section{
+    width: 40%;
+}
+
+.spices-section .left-section .img-container , .spices-section .right-section .img-container{
+    width: 100%;
+}
+
+.spices-section .left-section .img-container img , .spices-section .right-section .img-container img{
+    width: 100%;
+}
+
+
+.leaf-icon{
+    position: absolute;
+    top: -5%;
+    right: 1%;
+    z-index: -1;
+}
+
+/*  Spices Section Ends */
+
+
+/*  Scroll Image Section Starts */
+
+.scroll-image-section {
+    padding-top: 79px;
+    padding-bottom: 60px;
+}
+
+.scroll-image-section .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gallery-section .mobile{
+    display: none;
+}
+
+/*  Scroll Image Section Ends */
+
+@media (max-width : 1260px) {
+    .spices-section .container{
+        flex-direction: column;
+    }
+
+    .spices-section .left-section{
+        width: 100%;
+    }
+    .spices-section .left-section .images-container{
+        justify-content: space-between;
+    }
+}
+
+@media (max-width : 990px) {
+
+    main.hero h1{
+        line-height: normal;
+    }
+    .gallery-section .container{
+        flex-direction: column;
+      }
+    
+      .gallery-section .section-left .image-container{
+        width: 100%;
+      }
+    
+      .gallery-section .section-left, .gallery-section .section-right{
+        width: 100%;
+    
+      }
+
+      .spices-section{
+        display: none;
+      }
+
+      .spices-section .container{
+        flex-direction: column;
+    }
+
+    .gallery-section .desktop{
+        display: none;
+    }
+    .gallery-section .mobile{
+        display: block;
+    }
+
+    .spices-section .left-section{
+        width: 100%;
+    }
+}

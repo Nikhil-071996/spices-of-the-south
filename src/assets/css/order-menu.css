@@ -1,0 +1,92 @@
+.order-menu{
+    border: 2px solid #F77500;
+    border-radius: 21px;
+    padding: 36px 29px 0 41px;
+    height: 95vh;
+}
+
+.order-menu h3.heading{
+    color: var(--secondary-color);
+    margin-bottom: 46px;
+}
+
+.order-menu-container{
+    height: 80%;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    padding-right: 36px;
+}
+
+.order-items{
+    margin-bottom: 34px;
+}
+
+.order-items h2{
+    color: var(--primary-color);
+    border-top: 6px solid var(--primary-color);
+    padding-top: 16px;
+    width: fit-content;
+}
+
+.order-items .food-items{
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.order-menu .items{
+    cursor: pointer;
+    padding: 1px;
+}
+
+.order-menu .items:hover{
+    background-color: #f7730070;
+}
+
+/* Scroll bar Starts */
+
+.order-menu-container::-webkit-scrollbar-track
+{
+	background-color:  #D9D9D952;
+}
+
+.order-menu-container::-webkit-scrollbar
+{
+	width: 7px;
+	background-color: #D9D9D952;
+}
+
+.order-menu-container::-webkit-scrollbar-thumb
+{
+	background-color: var(--primary-color);
+	border: 2px solid var(--primary-color);
+}
+
+/* Scroll bar Ends  */
+
+
+@media (max-width : 990px) {
+    .item-added{
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, 10px);
+        background-color: #000000be;
+        color: #fff;
+        width: fit-content !important;
+        padding: 1px 25px;
+        border-radius: 100px;
+        font-size: 12px;
+        opacity: 0;
+        transition: all 0.3s ease;
+    }
+
+    .item-added.active{
+        opacity: 1;
+        transform: translate(-50%, 0);
+    }
+
+
+}

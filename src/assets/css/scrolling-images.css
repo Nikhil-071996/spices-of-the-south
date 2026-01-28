@@ -1,0 +1,40 @@
+
+
+
+.scroll-infinity .image img{
+    max-width: 150px;
+  height: 5rem;
+  padding: 0 15px;
+  object-fit: cover;
+}
+
+.scroll-infinity .image img:last-of-type {
+    padding-left: 0;
+  }
+
+.inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 5rem;
+  }
+  
+  .wrapper {
+    position: absolute;
+    display: flex;
+  }
+  
+  section.scroll-infinity {
+    display: flex;
+    animation: swipe 10s linear infinite backwards;
+  }
+  
+  @keyframes swipe {
+    0% {
+      transform: translate(0);
+    }
+  
+    100% {
+      transform: translate(-100%);
+    }
+  }

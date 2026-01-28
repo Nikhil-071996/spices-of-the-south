@@ -1,0 +1,234 @@
+.menu-items{
+    padding-top: 94px;
+    position: relative;
+}
+
+
+.menu-items .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-items .left-section{
+    width: 35%;
+    position: relative; 
+
+    display: flex;
+    align-items: center;
+    gap: 5%;
+    flex-direction: column;
+}
+
+.menu-items .left-section .img-container{
+    width: 100%;
+}
+
+.menu-items .left-section .img-container img{
+    width: 100%;
+}
+
+.image2{
+    margin-bottom: 10%;
+}
+
+.menu-items .right-section{
+    width: 60%;
+}
+
+.menu-items .right-section h2{
+    color: var(--primary-color);
+    border-top: 10px solid var(--primary-color);
+    padding-top: 22px;
+    width: fit-content;
+    /* text-decoration-thickness: 10px; */
+}
+
+.short-info{
+    color: var(--primary-color);
+}
+
+.food-items{
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
+}
+
+.food-items .items{
+    display: flex;
+    justify-content: space-between;
+}
+
+.food-items .items .name-section{
+    flex: 1;
+
+}
+
+.food-items .items .item-name{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.food-items .items .item-name .image-container{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.food-items .items .item-name .image-container img{
+    width: 23px;
+    aspect-ratio: 1;
+}
+
+.food-items .items p{
+    width: 50%;
+}
+
+.menu-items .leaf-icon{
+    position: absolute;
+    top: -18%;
+    right: 0;
+}
+
+.menu-items .mahabali{
+    position: absolute;
+    top: 10%;
+    left: 5%;
+}
+
+.menu-items .Vilakka{
+    position: absolute;
+    bottom: 25%;
+    right: -10%;
+}
+
+.menu-items .Damroo{
+    /* position: absolute; */
+
+    bottom: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.menu-items .starFlower{
+    position: absolute;
+    right: 0%;
+    top: 0;
+}
+
+.container.Biryani{
+    align-items: center;
+    margin-top: -50px;
+}
+
+.container.Chefs.Specials{
+    align-items: center;
+}
+
+img.Biryani{
+    width: 90% !important;
+}
+
+img.Chefs.Specials{
+    width: 90% !important;
+}
+
+.food-items .mobile{
+    display: none;
+}
+
+@media (max-width : 1260px) {
+    .food-items .items .item-name .image-container{
+        margin-top: 10px;
+    }
+
+    .food-items .items .item-name{
+        align-items: flex-start;
+    }
+}
+
+
+@media (max-width : 990px) {
+
+    .menu-items .leaf-icon{
+        width: 130px;
+        top: -18%;
+        right: 0;
+    }
+
+    .food-items .items .item-name .image-container{
+        margin-top: 0;
+    }
+
+    .image2{
+        display: none;
+    }
+
+    .food-items .items .item-name{
+        align-items: center;
+    }
+
+    .menu-items .mahabali{
+        top: 0;
+        left: 0;
+    }
+
+    .menu-items .container{
+        flex-direction: column !important;
+        gap: 30px;
+    }
+
+    .menu-items .left-section{
+        width: 100%;
+    }
+
+    .menu-items .right-section{
+        width: 100%;
+    }
+
+    .menu-items .Damroo{
+        bottom: 0;
+        position: absolute;
+        top: -20%;
+        left: 0;
+        transform: translateX(0);
+    }
+
+    .food-items .items{
+        flex-direction: column;
+        gap: 10px;
+        border-bottom: 1px solid #0000001f;
+        padding-bottom: 10px;
+    }
+
+    .food-items .items .item-name{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .food-items .items p{
+        width: 100%;
+    }
+
+    .food-items .items .item-name .image-container.desktop{
+        display: none;
+    }
+
+    .food-items  .mobile{
+        display: flex;
+        gap: 10px;
+    }
+
+    .food-items .mobile img{
+        width: 30px;
+        aspect-ratio: 1;
+    }
+
+    .menu-items .Vilakka{
+        right: 0;
+        bottom: -50%;
+    }
+    
+}

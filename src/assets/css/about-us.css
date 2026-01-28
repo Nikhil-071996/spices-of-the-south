@@ -1,0 +1,210 @@
+.about-us{
+    padding-top: 50px;
+}
+
+.about-us-section .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-us-section .left-section{
+    display: flex;
+    flex-direction: column;
+}
+
+.about-us-section .right-section .img-container{
+    width: 100%;
+}
+
+.about-us-section .right-section .img-container img{
+    width: 100%;
+}
+
+.about-us-section .right-section .img-container{
+    margin-bottom: 5px;
+}
+
+.about-us-section .right-section h5{
+    text-align: right;
+}
+
+.about-us-section .left-section h1{
+    color: var(--primary-color);
+    margin-bottom: 25px;
+}
+
+.about-us-section .left-section p{
+    line-height: 38px;
+    margin-bottom: 38px;
+}
+
+.about-us-section .left-section .btn-container{
+    display: flex;
+    gap: 16px;
+}
+
+.about-us-section .left-section .btn-container a{
+    text-decoration: none;
+}
+
+.about-us-section .left-section .btn-container .view-menu-btn{
+    color: #000;
+}
+.about-us-section .left-section .btn-container .view-menu-btn:hover{
+    color: #fff;
+}
+
+.about-us-section .left-section, .about-us-section .right-section{
+    width: 48%;
+}
+
+/* Dish Section Starts */
+
+.dish-section{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.dish-section .boat{
+    position: absolute;
+    right: 0;
+}
+
+.dish-section .plant{
+    position: absolute;
+    right: -10%;
+    top: -40%;
+}
+
+.dish-section .flower{
+    position: absolute;
+    right: 0%;
+    bottom: 20%;
+}
+
+ .dish-section .right-section{
+    width: 60%;
+    position: relative;
+}
+
+.dish-section .left-section{
+    width: 40%;
+    position: relative;
+
+}
+
+.dish-section .left-section .img-container{
+    width: 100%;
+}
+
+.dish-section .left-section .img-container img{
+    width: 100%;
+}
+
+.dish-section p{
+    width: 70%;
+    line-height: 38px;
+    margin-top: 20%;
+    margin-left: 10%;
+    position: relative;
+
+}
+
+
+/* DishSection Ends */
+
+/* DishSection Two Starts */
+
+.dish-section-two{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dish-section-two .left-section{
+    width: 55%;
+    position: relative;
+}
+
+.dish-section-two .right-section{
+    width: 45%;
+    position: relative;
+}
+
+.dish-section-two .right-section .pot{
+    position: absolute;
+}
+
+.dish-section-two .right-section .img-container{
+    width: 100%;
+}
+
+.dish-section-two .right-section .img-container img{
+    width: 100%;
+}
+
+.dish-section-two p{
+    width: 70%;
+    margin-left: 10%;
+    line-height: 38px;
+}
+
+/* DishSection Two Ends */
+
+
+@media (max-width : 990px) {
+
+    .about-us{
+        padding-top: 30px;
+    }
+
+    .about-us-section .container{
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+
+    .about-us-section .left-section, .about-us-section .right-section{
+        width: 100%;
+    }
+
+    .dish-section{
+        flex-direction: column;
+    }
+
+    .dish-section .left-section{
+        width: 100%;
+    }
+
+    .dish-section .right-section{
+        width: 100%;
+    }
+
+    .dish-section-two{
+        flex-direction: column-reverse;
+    }
+
+    .dish-section-two .left-section{
+        width: 100%;
+    }
+
+    .dish-section-two .right-section{
+        width: 100%;
+    }
+
+    .dish-section-two p{
+        width: 100%;
+        margin-left: 0;
+        padding: 3%;
+    }
+
+    .dish-section .plant{
+        right: 0;
+    }
+
+    .dish-section p{
+        width: 100%;
+        margin-left: 0;
+        padding: 3%;
+    }
+}

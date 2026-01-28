@@ -1,0 +1,91 @@
+.get-in-touch{
+    padding-top: 181px;
+    position: relative;
+}
+
+.get-in-touch h2{
+    margin-bottom: 12px;
+}
+
+.contact-info {
+    margin-top: 36px;
+    display: flex;
+    gap: 36px;
+    flex-direction: column;
+}
+
+.contact-info .info{
+    display: flex;
+    align-items: center;
+    gap: 3%;
+    width: 70%;
+}
+
+.contact-info .info .img-container{
+    width: 24px;
+}
+
+.contact-info .info .img-container img{
+    height: 100%;
+}
+
+.get-in-touch .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.get-in-touch .section-left{
+    width: 45%;
+}
+
+.get-in-touch .section-left p{
+    line-height: normal !important;
+}
+
+.get-in-touch .section-right{
+    width: 45%;
+}
+
+.social-media{
+    margin-top: 54px;
+    width: 70%;
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 13%;
+    align-items: center;
+}
+
+.social-media img{
+    cursor: pointer;
+}
+
+.get-in-touch .leaf-icon{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+
+@media (max-width : 990px) {
+    .get-in-touch .container{
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .get-in-touch .section-left{
+        width: 100%;
+    }
+
+    .get-in-touch .section-right{
+        width: 100%;
+        
+    }
+
+    .social-media{
+        width: 100%;
+    }
+
+    .get-in-touch .leaf-icon{
+        width: 130px;
+    }
+}

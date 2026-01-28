@@ -1,0 +1,126 @@
+.order .container{
+    padding-top: 50px;
+}
+.order .container h2.order-heading{
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.order .container p{
+    line-height: 38px;
+    width: 90%;
+}
+
+.menu-and-order-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-and-order-container .left-section,
+.menu-and-order-container .right-section{
+    width: 48%;
+}
+
+.error{
+    margin-top: 10px;
+    opacity: 0;
+    color: #FFCACA;
+    font-weight: 700;
+}
+
+.error.active{
+    opacity: 1;
+}
+
+@media (max-width :990px) {
+    .menu-and-order-container{
+        flex-direction: column;
+    }
+
+    .menu-and-order-container .left-section, .menu-and-order-container .right-section{
+        width: 100%;
+    }
+
+    .menu-and-order-container .left-section{
+        position: fixed;
+        background-color: #fff;
+        width: 100vw;
+        height: 100vh;
+        left: 0;
+        right: 0;
+    }
+
+    .menu-and-order-container .left-section{
+        position: fixed;
+        background-color: #fff;
+        width: 100vw;
+        height: 100vh;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 1000;
+        transform: translateY(100%);
+        transition: all 0.3s ease;
+    }
+
+    .menu-and-order-container .left-section.active{
+        transform: translateY(5%);
+    }
+
+    .order-menu{
+        padding: 36px 19px 0 15px;
+    }
+    .order .container p{
+        width: 100%;
+    }
+
+    .order-container{
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .total-container{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .total-container .total{
+        width: 100%;
+    }
+
+    .offers-container{
+        padding: 10px;
+    }
+
+    .padding-section{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .order-section-btn{
+        margin-top: auto;
+    }
+
+    .order-container .orders{
+        flex-wrap: wrap;
+        border-bottom: 1px solid #00000040;
+    }
+
+    .order-container .orders .dish-name{
+        width: 100%;
+    }
+
+    .order-container .orders .no-of-orders{
+        width: 50%; 
+    }
+
+    .order-btn{
+        width: 100%;
+        text-align: center; 
+        padding: 11px 0;
+    }
+
+}

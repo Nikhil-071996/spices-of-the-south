@@ -1,0 +1,120 @@
+
+
+/* Menu Intro Starts */
+
+.menu-intro{
+    padding-bottom: 50px;
+}
+
+.menu-intro .container{
+    padding-top: 50px;
+}
+
+.menu-intro .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-intro .left-section{
+    width: 48%;
+}
+
+.menu-intro .left-section .img-container{
+    width: 100%;
+}
+
+.menu-intro .left-section .img-container img{
+    width: 100%;
+}
+
+.menu-intro .right-section{
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-intro .right-section h1{
+    color: var(--primary-color);
+}
+
+.menu-intro .right-section p{
+    line-height: 34px;
+    width: 85%;
+}
+
+.type-of-food{
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+    margin-top: 34px;
+}
+
+.type-of-food .type{
+    display: flex;
+    align-items: center;
+    gap: 17px;
+}
+
+.type-of-food .type img{
+    width: 42px;
+}
+
+.menu-intro .right-section a{
+    margin-top: auto;
+    margin-bottom: 10px;
+}
+
+
+.credit a{
+    text-decoration: none;
+    color: #000;
+}
+
+
+/* Menu Intro Ends */
+
+
+@media (max-width : 1260px) {
+    .menu-intro .right-section p{
+        width: 100%;
+    }
+
+    .menu-intro .left-section {
+        width: 58%;
+    }
+
+    .menu-intro .right-section {
+        width: 40%;
+    }
+
+    .menu-intro .right-section a{
+        margin-bottom: 0;
+    }
+}
+
+
+@media (max-width : 990px) {
+    .menu-intro .container{
+        flex-direction: column;
+        gap: 20px;
+        padding-top: 30px;
+    }
+
+    .menu-intro .left-section{
+        width: 100%;
+    }
+
+    .menu-intro .right-section{
+        width: 100%;
+    }
+
+    
+
+    .menu-intro .right-section a{
+        margin-top: 30px;
+    }
+
+    
+}
+
+

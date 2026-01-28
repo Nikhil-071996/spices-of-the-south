@@ -1,0 +1,347 @@
+.order-form{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    z-index: 10000;
+    scale: 0;
+    opacity: 0;
+    transition: all 0.3s ease; 
+}
+
+.order-form.active{
+    scale: 1;
+    opacity: 1;
+}
+
+.close-button{
+    width: 30px;
+    filter: invert();
+    cursor: pointer;
+}
+
+.order-form .overlay{
+    width: 100%;
+    height: 100%;
+    background-color: #0000007a;
+}
+
+.place-order-form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 32px;
+    width: 80%;
+    background: #F77500;
+    padding: 54px 48px;
+
+}
+
+.place-order-form h3{
+    color: #fff;
+    text-align: center;
+    margin-bottom: 37px;
+}
+
+.place-order-form .row{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 31px;
+}
+.place-order-form .row.row-msg{
+    margin-bottom: 62px;
+}
+
+.place-order-form .column-1,.place-order-form .column-2{
+    width: 45%;
+}
+
+.place-order-form input{
+    font-size: 32px;
+    color: #fff;
+    border : none;
+    border-bottom: 1px solid #FFFFFF;
+    padding: 0;
+    padding-bottom: 22px;
+    background-color: transparent;
+    outline: none;
+    width: 100% !important;
+    font-weight: 600;
+}
+
+.order-date fieldset{
+    border: none !important;
+
+}
+
+.MuiDialog-root.MuiModal-root{
+    z-index: 10000000000000 !important;
+}
+
+
+
+
+
+
+.order-date{
+    display: flex;
+    flex-direction: column;
+}
+
+.place-order-form input::placeholder{
+    color: #fff;
+}
+
+.date-container input{
+    width: 50%;
+}
+
+input[type="date"],input[type="time"]{
+    width: 80%;
+    border: none;
+    padding: 0;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert();
+    cursor: pointer;
+  }
+
+  /* For Firefox */
+  input[type="date"]::-moz-calendar-picker-indicator {
+    filter: invert();
+    cursor: pointer;
+  }
+
+  input[type="time"]::-webkit-calendar-picker-indicator {
+    filter: invert();
+    cursor: pointer;
+  }
+
+  /* For Firefox */
+  input[type="time"]::-moz-calendar-picker-indicator {
+    filter: invert();
+    cursor: pointer;
+  }
+
+.date-container{
+    display: flex;
+    border-bottom: 1px solid #FFFFFF;
+    justify-content: space-between;
+}
+
+.date-span{
+    font-size: 32px;
+    color: #FFFFFFB0;
+    border : none;
+    padding-bottom: 22px;
+    background-color: transparent;
+    outline: none;
+    width: 55%;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.date-span span,.time-span span{
+    position: absolute;
+    left: 0;
+    pointer-events: none;
+    z-index: -1;
+    opacity: 0;
+}
+
+.date-span img,.time-span img{
+    position: absolute;
+    right: 0;
+    pointer-events: none;
+    z-index: -1;
+    opacity: 0;
+}
+
+
+
+.time-span{
+
+    font-size: 32px;
+    color: #FFFFFFB0;
+    border : none;
+    padding-bottom: 22px;
+    background-color: transparent;
+    outline: none;
+    width: 40%;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.date-span.active, .time-span.active{
+    color: #fff;
+    
+}
+
+.date-span img, .time-span img{
+    filter: invert() brightness(1000);
+    width: 30px;
+}
+
+label{
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 22px;
+    color: #fff;
+}
+
+.status-message{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.status-message.error{
+    opacity: 1;
+}
+
+.status-message.success{
+    opacity: 1;
+    color: #A2FF6C;
+}
+
+input[type="date"],
+    input[type="time"] ,
+    .time-picker{
+      position: relative;
+      font-size: 24px;
+      color: #FFFFFFB0;
+      background: transparent;
+        border: none;
+        outline: none;
+    }
+    
+    
+
+    .place-order-btn{
+        all: unset;
+        display: block;
+        width: 80%;
+        padding: 25px 26px;
+        font-size: 32px;
+        font-weight: 600;
+        margin: 0 auto;
+        background-color: #fff;
+        border-radius: 9px;
+        cursor: pointer;
+        position: relative;
+        text-align: center;
+    }
+
+    .simple-spinner {
+        width: 32px;
+        height: 32px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+      
+      .simple-spinner span {
+        display: block;
+        width: 32px;
+        height: 32px;
+        border: 3px solid transparent;
+        border-radius: 50%;
+        border-right-color: #00A601;
+        animation: spinner-anim 0.8s linear infinite;
+      }
+      
+      @keyframes spinner-anim {
+        from {
+          transform: rotate(0);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    
+@media (max-width : 990px) {
+    .place-order-form .row{
+        flex-direction: column;
+        margin-bottom: 20px;
+        gap: 20px;
+    }
+
+    .place-order-form .column-1, .place-order-form .column-2{
+        width: 100%;
+    }
+
+
+    .date-span img, .time-span img{
+        width:20px;
+    }
+
+    .place-order-form input{
+        font-size: 16px;
+        padding-bottom: 12px;
+    }
+
+    .time-span{
+        font-size: 16px;
+        padding-bottom: 12px;
+    }
+
+    .date-span{
+        font-size: 16px;
+        padding-bottom: 12px;
+    }
+
+    label{
+        font-size: 16px;
+    }
+
+    .place-order-btn{
+        font-size: 16px;
+        padding: 15px 26px;
+        height: 20px;
+    }
+
+    .place-order-form {
+        width: 90%;
+        background: #F77500;
+        padding: 24px 18px;
+    }
+
+    .place-order-form h3 {
+        margin-bottom: 17px;
+    }
+
+    .date-span span,.time-span span{
+        z-index: -1;
+        opacity: 1;
+    }
+    
+    .date-span img,.time-span img{
+        z-index: -1;
+        opacity: 1;
+    }
+
+    .date-span.active span,.time-span.active span{
+        z-index: -1;
+        opacity: 0;
+    }
+    
+    .date-span.active img,.time-span.active img{
+        z-index: -1;
+        opacity: 0;
+    }
+
+    input[type="date"],input[type="time"]{
+        width: 100%;
+        padding: 0;
+    }
+
+}

@@ -1,0 +1,39 @@
+.enquire-btn{
+    position: fixed;
+    right: -2.4rem;
+    font-size: 24px;
+    background-color: #00A601;
+    color: #fff;
+    text-decoration: none;
+    transform: rotateZ(-90deg);
+    top: 50%;
+    padding: 1rem 2rem;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+    z-index: 10000;
+    border-radius: 10px;
+    border: none;
+}
+
+
+
+
+@media (max-width: 990px) {
+    .enquire-btn {
+        right: 0;
+        padding: 1.2rem 0;
+        font-weight: 500;
+        width: 100vw;
+        font-size: 24px;
+        bottom: 0;
+        transform: rotateZ(0);
+        top: auto;
+        border-radius: 0.5rem 0.5rem 0 0;
+        background-color: #00a600f1;
+    }
+    
+
+    
+
+}
